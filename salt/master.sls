@@ -27,7 +27,7 @@ salt-master:
 {% for root in roots %}
 Create {{ root }}:
   file.directory:
-    - name {{root }}
+    -name {{root }}
 {% endfor %}
 {% endfor %}
 {% endif %}
